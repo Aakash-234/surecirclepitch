@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sure Circle - P2P Self-Insurance Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pitch-deck">
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button class="nav-btn prev-btn" id="prevBtn">←</button>
+            <span class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">15</span></span>
+            <button class="nav-btn next-btn" id="nextBtn">→</button>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active" id="slide-1">
+            <div class="slide-content">
+                <div class="hero-section">
+                    <div class="hero-badge">Reimagining Insurance</div>
+                    <h1 class="hero-title">Sure Circle</h1>
+                    <p class="hero-subtitle">Peer-to-Peer Self-Insurance Platform for India</p>
+                    <div class="hero-tagline">
+                        <span class="highlight">Transparent</span> • 
+                        <span class="highlight">Trust-Based</span> • 
+                        <span class="highlight">Community-Driven</span>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-target="300">0</div>
+                            <div class="stat-label">Early Adopters</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-target="40">0</div>
+                            <div class="stat-label">% Cost Savings</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-target="85">0</div>
+                            <div class="stat-label">% To Claims</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Problem Statement -->
+        <div class="slide" id="slide-2">
+            <div class="slide-content">
+                <h2>The Insurance Problem</h2>
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">💸</div>
+                        <h3>Money Lost Forever</h3>
+                        <p>₹18,000 paid over 18 months for smartphone insurance with <strong>zero claims, zero returns</strong></p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">📊</div>
+                        <h3>Hidden Costs</h3>
+                        <p>For every ₹1,000 premium, only <strong>₹600 goes to actual claims</strong> - ₹400 lost to overhead</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🏢</div>
+                        <h3>Trust Deficit</h3>
+                        <p>Complex claim processes, delayed payouts, and <strong>lack of transparency</strong> in traditional insurance</p>
+                    </div>
+                </div>
+                <div class="market-stat">
+                    <p>Millions of Indians pay premiums and <span class="highlight">never file claims</span> - that money is gone forever</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Market Opportunity -->
+        <div class="slide" id="slide-3">
+            <div class="slide-content">
+                <h2>Massive Market Opportunity</h2>
+                <div class="market-container">
+                    <div class="market-chart">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751121987/pplx_code_interpreter/080e80fc_sigogo.jpg" alt="India Insurance Market Growth" class="chart-image">
+                    </div>
+                    <div class="market-highlights">
+                        <div class="market-stat-large">
+                            <div class="stat-number-large" data-target="808">$0</div>
+                            <div class="stat-label-large">Billion Market by 2033</div>
+                            <div class="stat-growth">11.5% CAGR</div>
+                        </div>
+                        <div class="market-points">
+                            <div class="market-point">
+                                <span class="point-icon">📱</span>
+                                <span>Mobile insurance: $2.1B → $6.7B (12.1% CAGR)</span>
+                            </div>
+                            <div class="market-point">
+                                <span class="point-icon">👥</span>
+                                <span>1 billion smartphone users by 2026</span>
+                            </div>
+                            <div class="market-point">
+                                <span class="point-icon">💡</span>
+                                <span>Growing digital awareness among middle class</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Solution Overview -->
+        <div class="slide" id="slide-4">
+            <div class="slide-content">
+                <h2>Our Solution: P2P Self-Insurance</h2>
+                <div class="solution-grid">
+                    <div class="solution-visual">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749648704/pplx_project_search_images/f9ae681d9e611621f52d92f14a67f16155a5c2b6.jpg" alt="P2P Network" class="p2p-diagram">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Community-Driven Protection</h3>
+                        <div class="solution-features">
+                            <div class="feature">
+                                <div class="feature-icon">🤝</div>
+                                <div>
+                                    <h4>Trusted Groups</h4>
+                                    <p>Form circles with friends, family, colleagues</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔒</div>
+                                <div>
+                                    <h4>Transparent Claims</h4>
+                                    <p>Democratic voting with photo evidence</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">💰</div>
+                                <div>
+                                    <h4>Money Back</h4>
+                                    <p>Get returns when no claims are made</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">⚡</div>
+                                <div>
+                                    <h4>Low Overhead</h4>
+                                    <p>Only 15% fees vs 40% traditional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: How It Works -->
+        <div class="slide" id="slide-5">
+            <div class="slide-content">
+                <h2>How Sure Circle Works</h2>
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">👥</div>
+                        <h3>Form Circle</h3>
+                        <p>Create or join a trusted group of 5-15 members</p>
+                    </div>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">💳</div>
+                        <h3>Pool Monthly</h3>
+                        <p>Contribute ₹300-₹1,000 per month to group fund</p>
+                    </div>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">🗳️</div>
+                        <h3>Vote on Claims</h3>
+                        <p>Democratic approval with evidence and transparency</p>
+                    </div>
+                </div>
+                <div class="governance-options">
+                    <h3>Flexible Governance</h3>
+                    <div class="governance-grid">
+                        <div class="governance-card">
+                            <h4>Direct Democracy</h4>
+                            <p>Members vote directly on claims</p>
+                        </div>
+                        <div class="governance-card">
+                            <h4>Representative Model</h4>
+                            <p>Elected representatives decide</p>
+                        </div>
+                        <div class="governance-card">
+                            <h4>Third-Party Arbitration</h4>
+                            <p>Neutral reviewers for ₹100-₹200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Product Demo -->
+        <div class="slide" id="slide-6">
+            <div class="slide-content">
+                <h2>Product Demo: Mobile App</h2>
+                <div class="mockup-grid">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="mockup-header">
+                                    <h4>Dashboard</h4>
+                                    <div class="status-bar">9:41 AM</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="circle-card">
+                                        <h5>Tech Professionals Circle</h5>
+                                        <div class="circle-stats">
+                                            <span>8 members</span>
+                                            <span>₹36,000 pool</span>
+                                        </div>
+                                    </div>
+                                    <div class="balance-card">
+                                        <p>Your Balance</p>
+                                        <h3>₹4,500</h3>
+                                    </div>
+                                    <div class="quick-actions">
+                                        <button class="action-btn">File Claim</button>
+                                        <button class="action-btn">View Claims</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mockup-label">Dashboard View</p>
+                    </div>
+                    
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="mockup-header">
+                                    <h4>Claims</h4>
+                                    <div class="status-bar">9:41 AM</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="claim-item">
+                                        <div class="claim-header">
+                                            <h5>Priya Sharma</h5>
+                                            <span class="claim-status approved">Approved</span>
+                                        </div>
+                                        <p>iPhone 14 - Screen crack</p>
+                                        <div class="claim-footer">
+                                            <span>₹15,000</span>
+                                            <span>7/8 votes</span>
+                                        </div>
+                                    </div>
+                                    <div class="claim-item">
+                                        <div class="claim-header">
+                                            <h5>Rahul Gupta</h5>
+                                            <span class="claim-status pending">Under Review</span>
+                                        </div>
+                                        <p>OnePlus 11 - Water damage</p>
+                                        <div class="claim-footer">
+                                            <span>₹8,500</span>
+                                            <span>3/8 votes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mockup-label">Claims Management</p>
+                    </div>
+
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="mockup-header">
+                                    <h4>Vote on Claim</h4>
+                                    <div class="status-bar">9:41 AM</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="voting-card">
+                                        <h5>Rahul's Claim</h5>
+                                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749703285/pplx_project_search_images/2319f7b766412a35b7953c0ab5a5a3cb4a69c401.jpg" alt="Damage photo" class="damage-photo">
+                                        <p>OnePlus 11 water damage during monsoon</p>
+                                        <div class="claim-amount">₹8,500</div>
+                                    </div>
+                                    <div class="vote-buttons">
+                                        <button class="vote-btn approve">✓ Approve</button>
+                                        <button class="vote-btn reject">✗ Reject</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mockup-label">Voting Interface</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Value Proposition -->
+        <div class="slide" id="slide-7">
+            <div class="slide-content">
+                <h2>Superior Value Proposition</h2>
+                <div class="comparison-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1751122118/pplx_code_interpreter/4183ef6f_pth7tj.jpg" alt="Cost Comparison" class="comparison-chart">
+                    <div class="value-highlights">
+                        <div class="value-card savings">
+                            <h3>30% Lower Costs</h3>
+                            <p>₹700 vs ₹1,000 traditional premium</p>
+                        </div>
+                        <div class="value-card returns">
+                            <h3>Money Back</h3>
+                            <p>₹300+ returns when no claims filed</p>
+                        </div>
+                        <div class="value-card coverage">
+                            <h3>Better Coverage</h3>
+                            <p>85% goes to claims vs 60% traditional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer-benefits">
+                    <h3>Why Choose Sure Circle?</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit">✓ Transparent claim process</div>
+                        <div class="benefit">✓ Community you trust</div>
+                        <div class="benefit">✓ Lower premiums</div>
+                        <div class="benefit">✓ Money back guarantee</div>
+                        <div class="benefit">✓ Instant claim voting</div>
+                        <div class="benefit">✓ No hidden fees</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Business Model -->
+        <div class="slide" id="slide-8">
+            <div class="slide-content">
+                <h2>Business Model & Revenue Streams</h2>
+                <div class="business-model-grid">
+                    <div class="revenue-streams">
+                        <h3>Revenue Streams</h3>
+                        <div class="stream">
+                            <div class="stream-icon">💳</div>
+                            <div>
+                                <h4>Platform Fee (3%)</h4>
+                                <p>Small fee on monthly contributions</p>
+                            </div>
+                        </div>
+                        <div class="stream">
+                            <div class="stream-icon">🏦</div>
+                            <div>
+                                <h4>Float Earnings (6.5-7.5%)</h4>
+                                <p>Invest pooled funds in FDs and bonds</p>
+                            </div>
+                        </div>
+                        <div class="stream">
+                            <div class="stream-icon">⚖️</div>
+                            <div>
+                                <h4>Arbitration Services</h4>
+                                <p>₹100-₹200 per third-party claim review</p>
+                            </div>
+                        </div>
+                        <div class="stream">
+                            <div class="stream-icon">📊</div>
+                            <div>
+                                <h4>Premium Analytics</h4>
+                                <p>Risk insights and premium optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unit-economics">
+                        <h3>Unit Economics</h3>
+                        <div class="economics-card">
+                            <div class="metric">
+                                <span>Average Group Size</span>
+                                <span class="value">8 members</span>
+                            </div>
+                            <div class="metric">
+                                <span>Monthly Contribution</span>
+                                <span class="value">₹500</span>
+                            </div>
+                            <div class="metric">
+                                <span>Platform Revenue/Group</span>
+                                <span class="value">₹120/month</span>
+                            </div>
+                            <div class="metric">
+                                <span>Float Earnings/Group</span>
+                                <span class="value">₹200/month</span>
+                            </div>
+                            <div class="metric total">
+                                <span>Total Revenue/Group</span>
+                                <span class="value">₹320/month</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Market Validation -->
+        <div class="slide" id="slide-9">
+            <div class="slide-content">
+                <h2>Early Market Validation</h2>
+                <div class="validation-grid">
+                    <div class="traction-stats">
+                        <div class="traction-card">
+                            <div class="traction-number" data-target="300">0</div>
+                            <div class="traction-label">Website Visitors</div>
+                        </div>
+                        <div class="traction-card">
+                            <div class="traction-number" data-target="12">0</div>
+                            <div class="traction-label">Active Users</div>
+                        </div>
+                        <div class="traction-card">
+                            <div class="traction-number" data-target="14">0</div>
+                            <div class="traction-label">K Reddit Views</div>
+                        </div>
+                        <div class="traction-card">
+                            <div class="traction-number" data-target="10">0</div>
+                            <div class="traction-label">Live Members</div>
+                        </div>
+                    </div>
+                    <div class="validation-story">
+                        <h3>Our Journey</h3>
+                        <div class="journey-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Started with Google Sheets</h4>
+                                    <p>5 friends pooling ₹500/month</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Built React Platform</h4>
+                                    <p>Complete web app with payments</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Viral Reddit Post</h4>
+                                    <p>14K+ views, strong engagement</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>10 Live Members</h4>
+                                    <p>Real money, real claims</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Go-to-Market Strategy -->
+        <div class="slide" id="slide-10">
+            <div class="slide-content">
+                <h2>Go-to-Market Strategy</h2>
+                <div class="gtm-container">
+                    <div class="target-segments">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751122226/pplx_code_interpreter/eb154d01_fwpmxc.jpg" alt="Target Segments" class="segments-chart">
+                    </div>
+                    <div class="gtm-strategy">
+                        <h3>Launch Strategy</h3>
+                        <div class="phase">
+                            <h4>Phase 1: Urban Professionals</h4>
+                            <p>Target tech workers, startups, corporate groups</p>
+                            <div class="tactics">
+                                <span class="tactic">LinkedIn campaigns</span>
+                                <span class="tactic">Office partnerships</span>
+                                <span class="tactic">Referral program</span>
+                            </div>
+                        </div>
+                        <div class="phase">
+                            <h4>Phase 2: College Students</h4>
+                            <p>Campus hostels, student communities</p>
+                            <div class="tactics">
+                                <span class="tactic">Campus ambassadors</span>
+                                <span class="tactic">Student discounts</span>
+                                <span class="tactic">Social media</span>
+                            </div>
+                        </div>
+                        <div class="phase">
+                            <h4>Phase 3: Communities</h4>
+                            <p>Housing societies, RWAs, local groups</p>
+                            <div class="tactics">
+                                <span class="tactic">Community events</span>
+                                <span class="tactic">Local partnerships</span>
+                                <span class="tactic">Word of mouth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Competitive Landscape -->
+        <div class="slide" id="slide-11">
+            <div class="slide-content">
+                <h2>Competitive Landscape</h2>
+                <div class="competitive-matrix">
+                    <div class="competitor-grid">
+                        <div class="competitor-card traditional">
+                            <h3>Traditional Insurance</h3>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>Established trust</li>
+                                        <li>Regulatory compliance</li>
+                                        <li>Large coverage</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>High overhead (40%)</li>
+                                        <li>No money back</li>
+                                        <li>Complex claims</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card digital">
+                            <h3>Digital Insurers (Acko)</h3>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>Digital-first</li>
+                                        <li>Quick processing</li>
+                                        <li>Lower premiums</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>Still 25-30% overhead</li>
+                                        <li>No community aspect</li>
+                                        <li>Limited transparency</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card cooperative">
+                            <h3>Cooperatives (SEWA)</h3>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>Community-based</li>
+                                        <li>Low overhead</li>
+                                        <li>Member ownership</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>Limited tech</li>
+                                        <li>Geographic constraints</li>
+                                        <li>Manual processes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card sure-circle">
+                            <h3>Sure Circle</h3>
+                            <div class="advantages">
+                                <h4>Our Advantages</h4>
+                                <ul>
+                                    <li>✓ Tech-enabled P2P</li>
+                                    <li>✓ Only 15% overhead</li>
+                                    <li>✓ Money back guarantee</li>
+                                    <li>✓ Transparent governance</li>
+                                    <li>✓ Trust-based groups</li>
+                                    <li>✓ Flexible claim models</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Financial Projections -->
+        <div class="slide" id="slide-12">
+            <div class="slide-content">
+                <h2>Financial Projections</h2>
+                <div class="projections-grid">
+                    <div class="revenue-projection">
+                        <h3>5-Year Revenue Forecast</h3>
+                        <div class="projection-chart">
+                            <div class="year-bar">
+                                <div class="year">Year 1</div>
+                                <div class="bar" style="height: 20%"></div>
+                                <div class="amount">₹12L</div>
+                            </div>
+                            <div class="year-bar">
+                                <div class="year">Year 2</div>
+                                <div class="bar" style="height: 35%"></div>
+                                <div class="amount">₹45L</div>
+                            </div>
+                            <div class="year-bar">
+                                <div class="year">Year 3</div>
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="amount">₹1.2Cr</div>
+                            </div>
+                            <div class="year-bar">
+                                <div class="year">Year 4</div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="amount">₹2.8Cr</div>
+                            </div>
+                            <div class="year-bar">
+                                <div class="year">Year 5</div>
+                                <div class="bar" style="height: 100%"></div>
+                                <div class="amount">₹5.2Cr</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-metrics">
+                        <h3>Key Metrics (Year 3)</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-number" data-target="5000">0</div>
+                                <div class="metric-label">Active Users</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-number" data-target="625">0</div>
+                                <div class="metric-label">Active Groups</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-number" data-target="25">₹0</div>
+                                <div class="metric-label">Cr Pool Size</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-number" data-target="30">0</div>
+                                <div class="metric-label">% Gross Margin</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assumptions">
+                        <h3>Key Assumptions</h3>
+                        <div class="assumption-list">
+                            <div class="assumption">• Average group size: 8 members</div>
+                            <div class="assumption">• Monthly contribution: ₹500</div>
+                            <div class="assumption">• Platform fee: 3%</div>
+                            <div class="assumption">• Float earnings: 7% annually</div>
+                            <div class="assumption">• Claims ratio: 85%</div>
+                            <div class="assumption">• Customer acquisition: ₹150</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Funding Ask -->
+        <div class="slide" id="slide-13">
+            <div class="slide-content">
+                <h2>Funding Ask: ₹2 Crores</h2>
+                <div class="funding-container">
+                    <div class="funding-breakdown">
+                        <h3>Use of Funds</h3>
+                        <div class="fund-allocation">
+                            <div class="allocation-item">
+                                <div class="allocation-bar" style="width: 40%"></div>
+                                <div class="allocation-details">
+                                    <span class="percentage">40%</span>
+                                    <span class="category">Product Development</span>
+                                    <span class="amount">₹80L</span>
+                                </div>
+                            </div>
+                            <div class="allocation-item">
+                                <div class="allocation-bar" style="width: 30%"></div>
+                                <div class="allocation-details">
+                                    <span class="percentage">30%</span>
+                                    <span class="category">Marketing & GTM</span>
+                                    <span class="amount">₹60L</span>
+                                </div>
+                            </div>
+                            <div class="allocation-item">
+                                <div class="allocation-bar" style="width: 20%"></div>
+                                <div class="allocation-details">
+                                    <span class="percentage">20%</span>
+                                    <span class="category">Team Expansion</span>
+                                    <span class="amount">₹40L</span>
+                                </div>
+                            </div>
+                            <div class="allocation-item">
+                                <div class="allocation-bar" style="width: 10%"></div>
+                                <div class="allocation-details">
+                                    <span class="percentage">10%</span>
+                                    <span class="category">Operations</span>
+                                    <span class="amount">₹20L</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="milestones">
+                        <h3>18-Month Milestones</h3>
+                        <div class="milestone-list">
+                            <div class="milestone">
+                                <div class="milestone-icon">📱</div>
+                                <div>Launch mobile app (iOS & Android)</div>
+                            </div>
+                            <div class="milestone">
+                                <div class="milestone-icon">👥</div>
+                                <div>Scale to 1,000+ active users</div>
+                            </div>
+                            <div class="milestone">
+                                <div class="milestone-icon">🏢</div>
+                                <div>Partner with 50+ organizations</div>
+                            </div>
+                            <div class="milestone">
+                                <div class="milestone-icon">📊</div>
+                                <div>Achieve ₹45L ARR</div>
+                            </div>
+                            <div class="milestone">
+                                <div class="milestone-icon">🔍</div>
+                                <div>Expand beyond mobile insurance</div>
+                            </div>
+                            <div class="milestone">
+                                <div class="milestone-icon">💼</div>
+                                <div>Prepare for Series A</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Team -->
+        <div class="slide" id="slide-14">
+            <div class="slide-content">
+                <h2>Our Team</h2>
+                <div class="team-section">
+                    <div class="founder-profile">
+                        <div class="founder-card">
+                            <div class="founder-avatar">👨‍💻</div>
+                            <h3>Founder & CEO</h3>
+                            <p>Tech entrepreneur with experience in fintech and insurance. Previously built and scaled digital products. Deep understanding of Indian insurance pain points through personal experience.</p>
+                            <div class="founder-highlights">
+                                <span>• IIT/IIM background</span>
+                                <span>• 5+ years fintech experience</span>
+                                <span>• Built MVP and acquired first users</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-expansion">
+                        <h3>Team Expansion Plan</h3>
+                        <div class="roles-grid">
+                            <div class="role-card">
+                                <h4>CTO</h4>
+                                <p>Mobile app development, scalable backend</p>
+                            </div>
+                            <div class="role-card">
+                                <h4>Product Manager</h4>
+                                <p>User experience, feature prioritization</p>
+                            </div>
+                            <div class="role-card">
+                                <h4>Marketing Lead</h4>
+                                <p>Growth, community building, partnerships</p>
+                            </div>
+                            <div class="role-card">
+                                <h4>Compliance Officer</h4>
+                                <p>Regulatory navigation, legal frameworks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advisors">
+                        <h3>Advisory Board</h3>
+                        <div class="advisor-list">
+                            <div class="advisor">
+                                <span class="advisor-icon">🏦</span>
+                                <span>Former insurance executive</span>
+                            </div>
+                            <div class="advisor">
+                                <span class="advisor-icon">⚖️</span>
+                                <span>Regulatory & compliance expert</span>
+                            </div>
+                            <div class="advisor">
+                                <span class="advisor-icon">📈</span>
+                                <span>Fintech growth specialist</span>
+                            </div>
+                            <div class="advisor">
+                                <span class="advisor-icon">🤝</span>
+                                <span>Cooperative movement leader</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Thank You -->
+        <div class="slide" id="slide-15">
+            <div class="slide-content">
+                <div class="thank-you-section">
+                    <h1>Thank You</h1>
+                    <p class="thank-you-subtitle">Ready to revolutionize insurance in India</p>
+                    
+                    <div class="cta-container">
+                        <h3>Let's Connect</h3>
+                        <div class="contact-grid">
+                            <div class="contact-card">
+                                <div class="contact-icon">📧</div>
+                                <h4>Email</h4>
+                                <p>hello@surecircle.in</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">🌐</div>
+                                <h4>Website</h4>
+                                <p>www.surecircle.in</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">📱</div>
+                                <h4>Mobile</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="next-steps">
+                            <h3>Next Steps</h3>
+                            <div class="steps-list">
+                                <div class="step">📋 Product Demo</div>
+                                <div class="step">💼 Due Diligence</div>
+                                <div class="step">🤝 Partnership Discussion</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-proof">
+                        <p>Featured in: TechCrunch • YourStory • Economic Times</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

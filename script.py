@@ -1,0 +1,44 @@
+# First, let me prepare market data for charts and visualizations
+import pandas as pd
+import json
+
+# Create comprehensive market data for charts
+market_data = {
+    "insurance_market_growth": {
+        "years": [2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033],
+        "total_market_usd_billion": [303.3, 338.0, 376.8, 420.1, 468.3, 521.8, 581.2, 647.0, 720.9, 807.9],
+        "mobile_insurance_usd_billion": [2.1, 2.35, 2.63, 2.95, 3.31, 3.71, 4.16, 4.66, 5.23, 6.7]
+    },
+    "traditional_vs_sure_circle": {
+        "traditional_insurance": {
+            "premium_allocation": {"claims": 60, "overhead": 25, "commissions": 15},
+            "cost_per_1000": 1000,
+            "returns_if_no_claims": 0
+        },
+        "sure_circle": {
+            "premium_allocation": {"claims": 85, "platform_fee": 10, "reserves": 5},
+            "cost_per_1000": 700,
+            "returns_if_no_claims": 300
+        }
+    },
+    "float_earnings_projection": {
+        "pooled_amount_monthly": [500, 1000, 1500, 2000],
+        "fd_rate_percent": 7.0,
+        "annual_earnings": [420, 840, 1260, 1680]
+    },
+    "target_segments": {
+        "urban_professionals": {"size_millions": 85, "adoption_rate": 0.15},
+        "college_students": {"size_millions": 45, "adoption_rate": 0.25},
+        "housing_societies": {"size_millions": 30, "adoption_rate": 0.20},
+        "office_groups": {"size_millions": 25, "adoption_rate": 0.18}
+    }
+}
+
+# Save data for use in charts
+with open('market_data.json', 'w') as f:
+    json.dump(market_data, f, indent=2)
+
+print("Market data prepared for visualization:")
+print(f"- Total insurance market growth: ${market_data['insurance_market_growth']['total_market_usd_billion'][0]}B → ${market_data['insurance_market_growth']['total_market_usd_billion'][-1]}B")
+print(f"- Mobile insurance growth: ${market_data['insurance_market_growth']['mobile_insurance_usd_billion'][0]}B → ${market_data['insurance_market_growth']['mobile_insurance_usd_billion'][-1]}B")
+print(f"- Sure Circle cost advantage: {((1000-700)/1000)*100:.0f}% savings vs traditional")
