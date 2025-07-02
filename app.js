@@ -2,7 +2,7 @@
 class PitchDeck {
     constructor() {
         this.currentSlide = 0;
-        this.totalSlides = 15;
+        this.totalSlides = 13;
         this.slides = document.querySelectorAll('.slide');
         this.progressFill = document.querySelector('.progress-fill');
         this.currentSlideElement = document.getElementById('currentSlide');
